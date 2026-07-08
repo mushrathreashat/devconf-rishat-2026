@@ -2,7 +2,7 @@
 
 ---
 
-📅 Deadline For 60 marks: **Jul 09 2026 (11:59 pm ⏱️)**
+📅 Deadline For 60 marks: **Jul 11 2026 (11:59 pm ⏱️)**
 
 📅 Deadline For 50 marks: **Jul 12 2026 (11:59 pm ⏱️)**
 
