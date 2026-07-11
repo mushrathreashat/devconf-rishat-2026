@@ -304,8 +304,9 @@ button{
 .footer{
     background:#0F172A;
     color:white;
-    width:90%;
+    width:100%;
     margin:auto;
+    margin-top:80px;
     padding:50px 80px;
 
 
@@ -323,7 +324,7 @@ button{
 }
 
 .social-icons img{
-    width:30px;
+    width:140px;
     height:30px;
     margin-left:15px;
     object-fit:contain;
@@ -338,7 +339,8 @@ button{
 
 .footer p{
     text-align:center;
-    color:#555;
+    color:#FFFFFF;
+    margin-top:20px;
 }
 
 
