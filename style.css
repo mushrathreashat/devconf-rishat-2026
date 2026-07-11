@@ -13,6 +13,15 @@ nav{
     align-items: center;
     padding: 20px 80px;;
 }
+.logo{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+}
+.logo img{
+    width:35px;
+    height:35px;
+}
 
 nav ul{
     display: flex;
@@ -33,6 +42,7 @@ button{
     padding: 12px 20px;
     font-weight: 800;
     cursor: pointer;
+    border-radius:50px;
 }
 
 /* Hero Section completed */
@@ -70,6 +80,7 @@ button{
     border:none;
     font-size: 16px;
     cursor: pointer;
+    border-radius:50px;
 }
 .btn:hover{
     background-color: #1D4ED8;
@@ -79,13 +90,13 @@ button{
     width:90%;
     margin :  auto ;
     padding: 100px 0; 
-    background:#f5f5f5;
+    background:#FFFFFF;
 }
 
 .speakers h2{
     width:420px;
     margin:0 auto 70px;
-    background:#fff7b0;
+    background:white;
     text-align: center;
     padding: 18px 20px;
     font-size: 50px;
@@ -99,6 +110,8 @@ button{
 }
 .speaker-card{
     position:relative;
+    overflow:hidden;
+    border-radius:15px;
 }
 
 .speaker-card img{
@@ -107,19 +120,20 @@ button{
     height: 380px;
     object-fit: cover;
     border-radius: 10px;
+    display:block;
     
 }
 
 
     .speaker-info{
     position:absolute;
-    bottom:-25px;
-    left:-15px;
+    bottom:20px;
+    left:20px;
     width:220px;
-    background:#fff7b0;
+    background:white;
     color:#000;
     padding:20px;
-    border-radius:10px;
+    border-radius:12px;
     box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
@@ -151,12 +165,13 @@ button{
 .pricing{
     width: 90%;
     margin: auto;
-    padding: 100px 0;
+    padding: 100px 80px;
     text-align: center;
 }
 .pricing h2{
     width: 100%;
-    font-size: 45px;
+    font-size: 56px;
+    font-weight:700;
     margin-bottom: 10px;
 }
 
@@ -165,29 +180,43 @@ button{
     margin-bottom: 40px;
 }
 .pricing-container{
-    display: grid;
+    display: flex;
+    justify-content: center;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
+    margin-top:60px;
     
 }
 .pricing-card{
-    background: #FFF8B0;
+    width:360px;
+    background: #ffffff;
+    border:1px solid #ddd;
     padding: 30px ;
     border-radius: 15px;
+    text-align:left;
     box-shadow: 0 8px 20px rgba(0,0,0,.15);
-    .pro{
-        background: #1d2433;
-        color: white;
+}
+     .pricing-card.pro{
+        background: #0F172A;
+        color:white;
         transform: scale(1.05);
     }
-    .pro button{
-        background: #1E90FF;
+    .pro .btn{
+        background-color:#2563EB;
         color: white;
+        border:none
     }
-}
+    .pro p,
+    .pro li,
+    .pro h4{
+        color:white;
+    }
+
 .pricing-card h3{
-    font-size: 45px;
-    margin: 20px 0;
+    font-size: 52px;
+    font-weight:700;
+    margin: 15px 0;
+    color:inherit;
 }
 .pricing-card ul{
     list-style: none;
@@ -196,18 +225,39 @@ button{
 }
 
 .pricing-card ul li{
+    color:#555;
+    line-height:1.8;
     margin: 12px 0;
     
 }
-.pricing-card button{
-    width: 100%;
-    padding: 15px 0;
-    border: none;
-    border-radius: 10px;
-    background:#FFF8b0;
-    text-align: center;
-    
+.pro li{
+    color:white;
 }
+.pricing-card .btn{
+    width: 100%;
+    margin-top:25px;
+    padding: 14px ;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+            
+    .pricing-card:not(.pro) .btn{
+    background:white;
+    color:#2563EB;
+    border:1px solid #2563EB;
+}
+    
+
+.btn:hover{
+    background-color:#1D4ED8;
+}
+
+
+
+
+
+
 /* hackathon */
 .hackathon{
     width: 90%;
@@ -215,7 +265,7 @@ button{
     text-align: center;
 }
 .hackathon h2{
-    font-size: 45px;
+    font-size: 48px;
     margin-bottom: 15px;
 }
 .hackathon p{
@@ -245,9 +295,11 @@ button{
 <!--Footer completed-->
 
 .footer{
+    background:#0F172A;
+    color:white;
     width:90%;
     margin:auto;
-    padding:40px 0;
+    padding:50px 80px;
 
 
 }
